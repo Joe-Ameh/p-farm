@@ -1,0 +1,151 @@
+/* ==========================================================================
+   DANGOTE GROUP - OUR BUSINESSES PAGE SPECIFIC STYLES (businesses.css)
+   Target Page: businesses.html
+   ========================================================================== */
+
+/* FILTER TABS BAR */
+.businesses-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.biz-filter-btn {
+  padding: 10px 22px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 30px;
+  background: #ffffff;
+  color: var(--dangote-navy);
+  border: 1px solid var(--dangote-card-border);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.biz-filter-btn:hover, .biz-filter-btn.active {
+  background: var(--dangote-navy);
+  color: #ffffff;
+  border-color: var(--dangote-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(17,12,91,0.25);
+}
+
+/* BUSINESS GRID & CARDS */
+.businesses-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid var(--dangote-card-border);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  border-color: var(--dangote-blue);
+}
+
+.project-card.hide {
+  display: none !important;
+}
+
+.project-card-image {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.08);
+}
+
+.biz-capacity-pill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(17, 12, 91, 0.88);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.project-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dangote-navy);
+  margin-bottom: 6px;
+}
+
+.project-tags {
+  font-size: 12px;
+  color: var(--dangote-blue);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-excerpt {
+  font-size: 14px;
+  color: var(--dangote-text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.biz-spec-box {
+  background: var(--dangote-gray-bg);
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 18px;
+  border-left: 3px solid var(--dangote-blue);
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 11px 18px;
+  background-color: var(--dangote-navy);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background-color 0.25s ease;
+}
+
+.project-btn:hover {
+  background-color: var(--dangote-blue);
+}

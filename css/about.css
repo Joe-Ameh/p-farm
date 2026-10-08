@@ -1,0 +1,331 @@
+/* ==========================================================================
+   DANGOTE GROUP - ABOUT US PAGE SPECIFIC STYLES (about.css)
+   Target Page: about.html
+   ========================================================================== */
+
+/* WHO WE ARE SECTION */
+.who-we-are {
+  padding: 0px 0; 
+  background-color: #ffffff;
+}
+
+.about-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  /* padding: 70px 0; */
+}
+
+.heading-main {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 15px; 
+  color: var(--dangote-text-muted); 
+  line-height: 1.7; 
+  margin-bottom: 15px;
+}
+
+.numbers-card {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+
+.about-stat-badge {
+  background: var(--dangote-gray-bg);
+  padding: 20px;
+  /* border-radius: 6px; */
+  transition: transform 0.3s ease;
+  div:nth-child(1){
+    font-family: 
+    var(--font-heading); 
+    font-size: 28px; 
+    font-weight: 800; 
+    color: var(--dangote-navy);
+  }
+  div:nth-child(2){
+    font-size: 13px; 
+    color: var(--dangote-text-muted); 
+    font-weight: 600;
+  }
+}
+
+.about-stat-badge:hover {
+  transform: translateY(-4px);
+}
+
+/* VISION, MISSION & VALUES */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid var(--dangote-card-border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-color: var(--dangote-blue);
+}
+
+.value-card i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.value-card:hover i {
+  transform: scale(1.15);
+  color: var(--dangote-red);
+}
+
+/* HISTORY TIMELINE TABS */
+.timeline-section {
+  padding: 70px 0;
+  background-color: #ffffff;
+}
+
+.timeline-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.timeline-tab-btn {
+  padding: 10px 24px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  /* border-radius: 30px; */
+  background: var(--dangote-gray-bg);
+  color: var(--dangote-navy);
+  border: 1px solid var(--dangote-card-border);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.timeline-tab-btn:hover, .timeline-tab-btn.active {
+  background: var(--dangote-navy);
+  color: #ffffff;
+  border-color: var(--dangote-navy);
+  box-shadow: 0 4px 14px rgba(17,12,91,0.25);
+}
+
+.timeline-content-panel {
+  display: none;
+  background: var(--dangote-gray-bg);
+  padding: 35px;
+  /* border-radius: 8px; */
+  border-left: 5px solid var(--dangote-blue);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.timeline-content-panel.active {
+  display: block;
+}
+
+.timeline-year {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dangote-navy);
+  margin-bottom: 10px;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dangote-blue);
+  margin-bottom: 12px;
+}
+
+.timeline-text {
+  font-size: 15px; 
+  color: var(--dangote-text-muted);
+}
+
+/* OUR MISSION, VISSION, VALUE */
+.mvc {
+  padding: 40px 0;
+  background: var(--dangote-navy);
+}
+
+.mvc-grid {
+  display: grid;
+  grid-template-columns: 1fr .7fr .7fr 1fr;
+  div{
+    padding: 20px;
+  }
+}
+
+.mvc-heading {
+  font-size: 45px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.second {
+  border-left: 1px solid #ffffff5c;
+  i{
+    font-size: 50px;
+    color: red;
+  }
+  h3{
+    color: #fff;
+    font-family: var(--font-heading); 
+    font-size: 22px; 
+    font-weight: 700;  
+    margin: 10px 0 12px 0;
+  }
+  p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.7;
+  }
+  ul{
+    padding-left: 20px;
+  }
+  li{
+    font-size: 12px;
+    color: #fff;
+    list-style-type: disc;
+  }
+}
+
+
+/* EXECUTIVE LEADERSHIP GRID */
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.leader-card {
+  background: #ffffff;
+  border: 1px solid var(--dangote-card-border);
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  transition: all 0.35s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.1);
+  border-color: var(--dangote-blue);
+}
+
+.leader-img-wrap {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.leader-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.leader-card:hover .leader-img-wrap img {
+  transform: scale(1.06);
+}
+
+@media (max-width: 992px) {
+  .about-overview-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .leaders-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 576px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .leaders-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+@media (max-width: 992px) {
+  /* WHO WE ARE SECTION */
+  .who-we-are {
+    padding: 30px 0; 
+  }
+
+  .about-overview-grid {
+    display: block;
+    align-items: center;
+    /* padding: 70px 0; */
+  }
+
+  .heading-main {
+    margin-bottom: 20px;
+  }
+
+  /* HISTORY TIMELINE TABS */
+  .timeline-section {
+    padding: 70px 0;
+  }
+
+  /* OUR MISSION, VISSION, VALUE */
+  .mvc {
+    padding: 40px 0;
+  }
+
+  .mvc-grid {
+    display: flex;
+    flex-wrap: wrap;
+    div{
+      width: 48%;
+      padding: 20px;
+      margin: 30px 0;
+    }
+  }
+
+  .mvc-heading {
+    font-size: 40px;
+  }
+
+
+  /* EXECUTIVE LEADERSHIP GRID */
+  .leaders-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+
+  .mvc-grid {
+    div{
+      padding: 0 20px;
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+
+  /* EXECUTIVE LEADERSHIP GRID */
+  .leaders-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}

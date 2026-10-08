@@ -1,0 +1,124 @@
+/* ==========================================================================
+   DANGOTE GROUP - CONTACT US PAGE SPECIFIC STYLES (contact.css)
+   Target Page: contact.html
+   ========================================================================== */
+
+/* CONTACT LAYOUT GRID */
+.contact-layout {
+  padding: 0; 
+  background-color: #ffffff;
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0;
+}
+
+.contact-form-card {
+  /* background: var(--dangote-gray-bg); */
+  padding: 80px 40px;
+  /* border-radius: 8px; */
+  /* border: 1px solid var(--dangote-card-border); */
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.03); */
+}
+
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dangote-navy);
+  margin-bottom: 6px;
+}
+
+.form-control-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 0px;
+  border: 1px solid var(--dangote-card-border);
+  font-size: 14px;
+  font-family: var(--font-main);
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.form-control-input:focus {
+  outline: none;
+  /* border-color: var(--dangote-blue); */
+  border-color: var(--dangote-card-border);
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.15);
+}
+
+/* HEAD OFFICE & REGIONAL CARDS */
+.head-office-card {
+  background: var(--dangote-navy);
+  color: #ffffff;
+  padding: 80px 35px 20px 35px;
+  /* border-radius: 8px; */
+  margin-bottom: 0px;
+  box-shadow: 0 6px 20px rgba(17,12,91,0.15);
+}
+
+.head-office-card h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-detail-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-detail-row i {
+  color: var(--dangote-gold);
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.regional-offices-card {
+  background: var(--dangote-navy);
+  padding: 30px 30px 60px 30px;
+  margin-top: 0;
+  /* border-radius: 8px; */
+  /* border: 1px solid var(--dangote-card-border); */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.regional-office-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--dangote-card-border);
+  font-size: 13px;
+  color: #fff;
+  transition: padding-left 0.2s ease;
+}
+
+.regional-office-item:last-child {
+  border-bottom: none;
+}
+
+.regional-office-item:hover {
+  padding-left: 6px;
+  color: #ffffffa8;
+}
+
+.regional-office-item strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .contact-layout-grid { grid-template-columns: 1fr; }
+  .form-group-row { grid-template-columns: 1fr; }
+}
