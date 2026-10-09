@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Businesses – Dangote Industries Limited</title>
-  <meta name="description" content="Explore the diversified industrial business units of Dangote Group across Cement, Oil Refinery, Petrochemicals, Sugar, Salt, Fertilizer, Packaging, Automotive, and Logistics.">
+  <title>Our Businesses – Bilhamis Industries Limited</title>
+  <meta name="description" content="Explore the diversified industrial business units of Bilhamis Group across Cement, Oil Refinery, Petrochemicals, Sugar, Salt, Fertilizer, Packaging, Automotive, and Logistics.">
   
   <!-- FontAwesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,41 +16,50 @@
 <body>
 
   <header class="site-header">
+  <div class="site-header-main">
+    <div class="main-header-inner">
 
-    <!-- MAIN HEADER -->
-    <div class="site-header-main">
-      <div class="main-header-inner">
-        
-        <!-- LOGO -->
-        <a href="index.html" class="site-logo">
-          <svg width="180" height="42" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
-            <rect width="220" height="50" rx="4" fill="#110C5B"/>
-            <text x="15" y="34" font-family="'Montserrat', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" letter-spacing="1">PETER</text>
-            <rect x="175" y="10" width="8" height="30" fill="#E31837"/>
-            <rect x="187" y="10" width="8" height="30" fill="#0056A7"/>
-          </svg>
-        </a>
+      <!-- LOGO -->
+      <a href="index.html" class="site-logo" aria-label="Peter Home">
+        <img src="./assets/main logo.png" width="40" alt="Bilhamis">
+      </a>
+      
+      <!-- MOBILE MENU OVERLAY -->
+      <div class="menu-overlay"></div>
 
-        <!-- NAVIGATION MENU -->
-        <nav class="site-navigation">
-          <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link">Home</a></li>
-            <li class="nav-dropdown">
-              <a href="./about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-dropdown">
-              <a href="./businesses.html" class="nav-link active">Our Businesses</a>
-            </li>
-            <!-- <li><a href="#investors" class="nav-link">Investors</a></li> -->
-            <!-- <li><a href="#sustainability" class="nav-link">Sustainability</a></li> -->
-            <!-- <li><a href="#media" class="nav-link">Media</a></li> -->
-            <!-- <li><a href="#careers" class="nav-link">Careers</a></li> -->
-            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- DESKTOP / MOBILE NAVIGATION -->
+      <nav class="site-navigation" id="site-navigation"
+           aria-label="Main navigation">
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./about.html" class="nav-link">About Us</a>
+          </li>
+          <li>
+            <a href="./businesses.html" class="nav-link active">Our Businesses</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-controls="site-navigation"
+              aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- PAGE HERO BANNER -->
   <section class="page-hero-banner">
@@ -82,18 +91,18 @@
         <!-- 1. OIL REFINERY -->
         <div class="project-card" id="oil" data-category="energy">
           <div class="project-card-image">
-            <img src="./assets/test 1.jpg" alt="Oil Refinery">
+            <img src="./assets/business 1.jpg" alt="Oil Refinery">
             <span class="biz-capacity-pill">700,000 BPD</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Petroleum Refinery</h3>
+            <h3 class="project-title">Bilhamis Petroleum Refinery</h3>
             <div class="project-tags">Energy & Petrochemicals • Lekki, Lagos</div>
             <p class="project-excerpt">A 700,000 barrels per day (BPD) single-train integrated refinery complex. Produces Euro-V gasoline, ultra-low sulfur diesel, jet fuel, and polypropylene.</p>
             <div class="biz-spec-box">
               <div><strong>Capacity:</strong> 700,000 Barrels / Day</div>
               <div><strong>Facilities:</strong> Polypropylene Plant & Deep Sea Port Loading</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Petroleum Refinery', 'Location: Lekki Free Trade Zone, Lagos, Nigeria.\n\nThe world\'s largest single-train crude oil refinery. Designed to meet 100% of Nigeria\'s refined petroleum requirements with surplus exported across Africa and Europe.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Petroleum Refinery', 'Location: Lekki Free Trade Zone, Lagos, Nigeria.\n\nThe world\'s largest single-train crude oil refinery. Designed to meet 100% of Nigeria\'s refined petroleum requirements with surplus exported across Africa and Europe.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -102,18 +111,18 @@
         <!-- 2. CEMENT -->
         <div class="project-card" id="cement" data-category="cement">
           <div class="project-card-image">
-            <img src="./assets/test 2.jpg" alt="Dangote Cement">
+            <img src="./assets/business 2.jpg" alt="Bilhamis Cement">
             <span class="biz-capacity-pill">51.6M MT / Year</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Cement Plc</h3>
+            <h3 class="project-title">Bilhamis Cement Plc</h3>
             <p class="project-tags">Building Materials • 11 African Countries</p>
             <p class="project-excerpt">Sub-Saharan Africa's leading cement manufacturer with fully integrated plants in Obajana, Ibese, and Gboko, alongside pan-African grinding terminals.</p>
             <div class="biz-spec-box">
               <div><strong>Capacity:</strong> 51.6 Million MT / Year</div>
               <div><strong>Presence:</strong> Nigeria, Ghana, Senegal, South Africa, Zambia</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Cement Plc', 'Listed on NGX (DANGCEM).\n\nOperates high-performance calcination plants producing 32.5, 42.5, and 52.5 grade cement for housing, roads, and civil infrastructure.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Cement Plc', 'Listed on NGX (DANGCEM).\n\nOperates high-performance calcination plants producing 32.5, 42.5, and 52.5 grade cement for housing, roads, and civil infrastructure.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -122,18 +131,18 @@
         <!-- 3. SUGAR REFINERY -->
         <div class="project-card" id="sugar" data-category="food">
           <div class="project-card-image">
-            <img src="./assets/test 3.jpg" alt="Sugar Refinery">
+            <img src="./assets/business 3.jpg" alt="Sugar Refinery">
             <span class="biz-capacity-pill">1.44M MT / Year</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Sugar Refinery Plc</h3>
+            <h3 class="project-title">Bilhamis Sugar Refinery Plc</h3>
             <div class="project-tags">Foods & Agriculture • Apapa & Numan</div>
             <p class="project-excerpt">Sub-Saharan Africa's largest sugar refinery supplying vitamin-A fortified refined sugar to domestic consumers and industrial food manufacturers.</p>
             <div class="biz-spec-box">
               <div><strong>Refining Cap:</strong> 1.44 Million MT / Year</div>
               <div><strong>Sugarcane Estates:</strong> 100,000+ Hectares under BIP</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Sugar Refinery Plc', 'Listed on NGX (DANGSUGAR).\n\nPioneering Nigeria\'s National Sugar Master Plan with large-scale sugarcane cultivation in Numan (Adamawa) and Tunga (Nasarawa).')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Sugar Refinery Plc', 'Listed on NGX (DANGSUGAR).\n\nPioneering Nigeria\'s National Sugar Master Plan with large-scale sugarcane cultivation in Numan (Adamawa) and Tunga (Nasarawa).')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -142,18 +151,18 @@
         <!-- 4. NASCON SALT & FOODS -->
         <div class="project-card" id="salt" data-category="food">
           <div class="project-card-image">
-            <img src="./assets/test 2.jpg" alt="NASCON Salt">
+            <img src="./assets/business 4.jpg" alt="NASCON Salt">
             <span class="biz-capacity-pill">600,000 MT / Year</span>
           </div>
           <div class="project-card-body">
             <h3 class="project-title">NASCON Allied Industries Plc</h3>
             <div class="project-tags">Consumer Foods • Apapa & Port Harcourt</div>
-            <p class="project-excerpt">Market leader in refined edible table salt, industrial processing salt, Dangote Seasoning Cubes, and refined vegetable oils.</p>
+            <p class="project-excerpt">Market leader in refined edible table salt, industrial processing salt, Bilhamis Seasoning Cubes, and refined vegetable oils.</p>
             <div class="biz-spec-box">
               <div><strong>Salt Output:</strong> 600,000 MT / Year</div>
               <div><strong>Certifications:</strong> ISO 22000 Food Safety</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('NASCON Allied Industries Plc', 'Listed on NGX (NASCON).\n\nProduces iodized table salt, industrial salt for textile and chemical industries, and Dangote Classic Seasoning Cubes.')">
+            <a href="#" class="project-btn" onclick="openModal('NASCON Allied Industries Plc', 'Listed on NGX (NASCON).\n\nProduces iodized table salt, industrial salt for textile and chemical industries, and Bilhamis Classic Seasoning Cubes.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -162,18 +171,18 @@
         <!-- 5. FERTILIZER -->
         <div class="project-card" id="fertilizer" data-category="energy">
           <div class="project-card-image">
-            <img src="./assets/test 3.jpg" alt="Dangote Fertilizer">
+            <img src="./assets/business 5.jpg" alt="Bilhamis Fertilizer">
             <span class="biz-capacity-pill">3.0M MT Urea</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Fertilizer Limited</h3>
+            <h3 class="project-title">Bilhamis Fertilizer Limited</h3>
             <div class="project-tags">Agriculture & Chemicals • Lekki, Lagos</div>
             <p class="project-excerpt">Africa's largest Granulated Urea Fertilizer complex. Supplies agricultural nutrients to enhance crop yields across Africa and global export markets.</p>
             <div class="biz-spec-box">
               <div><strong>Urea Output:</strong> 3.0 Million MT / Year</div>
               <div><strong>Product:</strong> Granulated Urea & Ammonia</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Fertilizer Limited', 'Located adjacent to the refinery in Lekki Free Zone.\n\nEquipped with twin-train Toyo technology, producing 3.0 MTPA of granulated urea to support African food security.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Fertilizer Limited', 'Located adjacent to the refinery in Lekki Free Zone.\n\nEquipped with twin-train Toyo technology, producing 3.0 MTPA of granulated urea to support African food security.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -182,18 +191,18 @@
         <!-- 6. PACKAGING -->
         <div class="project-card" id="packaging" data-category="packaging">
           <div class="project-card-image">
-            <img src="./assets/test 1.jpg" alt="Dangote Packaging">
+            <img src="./assets/report 1.jpg" alt="Bilhamis Packaging">
             <span class="biz-capacity-pill">500M+ Sacks</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Agro Sacks Limited</h3>
+            <h3 class="project-title">Bilhamis Agro Sacks Limited</h3>
             <div class="project-tags">Industrial Packaging • Ibese & Obajana</div>
             <p class="project-excerpt">High-speed manufacturing of woven polypropylene sacks, supplying durable industrial packaging for cement, food, and agricultural products.</p>
             <div class="biz-spec-box">
               <div><strong>Output:</strong> 500+ Million Sacks / Year</div>
               <div><strong>Technology:</strong> Starlinger Weaving Lines</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Agro Sacks Limited', 'Established in 1998.\n\nOperates high-capacity woven polypropylene bag manufacturing plants supplying West Africa\'s cement and agricultural markets.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Agro Sacks Limited', 'Established in 1998.\n\nOperates high-capacity woven polypropylene bag manufacturing plants supplying West Africa\'s cement and agricultural markets.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -202,18 +211,18 @@
         <!-- 7. AUTOMOTIVE -->
         <div class="project-card" data-category="logistics">
           <div class="project-card-image">
-            <img src="./assets/test 3.jpg" alt="Sinotruk Assembly">
+            <img src="./assets/report 2.jpg" alt="Sinotruk Assembly">
             <span class="biz-capacity-pill">10,000 Trucks / Yr</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Sinotruk West Africa</h3>
+            <h3 class="project-title">Bilhamis Sinotruk West Africa</h3>
             <div class="project-tags">Automotive & Assembly • Ikeja, Lagos</div>
             <p class="project-excerpt">Commercial vehicle assembly plant manufacturing heavy-duty trucks, dump trucks, and logistics trailers to power African transport logistics.</p>
             <div class="biz-spec-box">
               <div><strong>Assembly Cap:</strong> 10,000 Trucks / Year</div>
               <div><strong>Type:</strong> Commercial Heavy Duty Trucks</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Sinotruk West Africa', 'Joint venture assembly facility in Lagos, Nigeria.\n\nAssembles heavy-duty commercial trucks and trailers for industrial haulage and commercial fleet operators.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Sinotruk West Africa', 'Joint venture assembly facility in Lagos, Nigeria.\n\nAssembles heavy-duty commercial trucks and trailers for industrial haulage and commercial fleet operators.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -222,18 +231,18 @@
         <!-- 8. TRANSPORT & LOGISTICS -->
         <div class="project-card" data-category="logistics">
           <div class="project-card-image">
-            <img src="./assets/test 1.jpg" alt="Logistics Fleet">
+            <img src="./assets/report 3.jpg" alt="Logistics Fleet">
             <span class="biz-capacity-pill">15,000+ Trucks</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">Dangote Transport & Fleet</h3>
+            <h3 class="project-title">Bilhamis Transport & Fleet</h3>
             <div class="project-tags">Logistics & Supply Chain • Pan-African</div>
             <p class="project-excerpt">Massive logistics haulage network operating over 15,000 heavy-duty distribution trucks and deep-sea port terminals across 11 African corridors.</p>
             <div class="biz-spec-box">
               <div><strong>Fleet Size:</strong> 15,000+ Heavy Duty Trucks</div>
               <div><strong>Tracking:</strong> GPS Real-Time Fleet Control</div>
             </div>
-            <a href="#" class="project-btn" onclick="openModal('Dangote Transport & Logistics', 'Manages cross-border supply chains linking factories, sea ports, and inland depots across West, Central, and Southern Africa.')">
+            <a href="#" class="project-btn" onclick="openModal('Bilhamis Transport & Logistics', 'Manages cross-border supply chains linking factories, sea ports, and inland depots across West, Central, and Southern Africa.')">
               <span>View Specs</span> <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -252,13 +261,10 @@
         
         <!-- COL 1: LOGO & OVERVIEW -->
         <div>
-          <svg width="150" height="36" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 15px;">
-            <rect width="220" height="50" rx="4" fill="#FFFFFF"/>
-            <text x="15" y="34" font-family="'Montserrat', sans-serif" font-weight="800" font-size="24" fill="#110C5B" letter-spacing="1">PETER</text>
-            <rect x="175" y="10" width="8" height="30" fill="#E31837"/>
-            <rect x="187" y="10" width="8" height="30" fill="#0056A7"/>
-          </svg>
-          <p class="footer-text">Dangote continues to grow its vision of becoming the leading provider of essential daily needs in Sub-Saharan Africa.</p>
+          <a href="index.html" class="site-logo" aria-label="Peter Home">
+            <img src="./assets/logo.png" width="40" alt="Bilhamis">
+          </a>
+          <p class="footer-text">Bilhamis continues to grow its vision of becoming the leading provider of essential daily needs in Sub-Saharan Africa.</p>
           <div class="footer-social-icons">
             <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-btn"><i class="fab fa-x-twitter"></i></a>
@@ -277,7 +283,7 @@
           </div>
           <div class="footer-contact-item">
             <i class="fas fa-envelope"></i>
-            <div>sales.enquiry@dangote.com<br>corporate.communications@dangote.com</div>
+            <div>sales.enquiry@Bilhamis.com<br>corporate.communications@Bilhamis.com</div>
           </div>
           <div class="footer-contact-item">
             <i class="fas fa-map-marker-alt"></i>
@@ -289,9 +295,9 @@
         <div>
           <h4 class="footer-col-title">Newsletter</h4>
           <p class="footer-text">Subscribe to our Newsletter & Event right now to be updated.</p>
-          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('Subscribed to Dangote Group Newsletter!');">
+          <form class="newsletter-box" onsubmit="event.preventDefault(); alert('Subscribed to Bilhamis Group Newsletter!');">
             <input type="email" class="newsletter-input-field" placeholder="Email Address" required>
-            <button type="submit" class="btn-dangote" style="width: 100%; justify-content: center; background-color: var(--dangote-blue);">Subscribe</button>
+            <button type="submit" class="btn-Bilhamis" style="width: 100%; justify-content: center; background-color: var(--Bilhamis-blue);">Subscribe</button>
           </form>
         </div>
 
@@ -303,7 +309,7 @@
     </div>
     <!-- FOOTER BOTTOM BAR -->
     <div class="footer-bottom-bar">
-      <div>© 2026 Dangote Industries Limited</div>
+      <div>© 2026 Bilhamis Industries Limited</div>
       <div class="footer-bottom-links">
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>

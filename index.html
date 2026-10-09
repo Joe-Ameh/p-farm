@@ -16,42 +16,53 @@
 <body>
 
   <!-- SITE HEADER -->
-  <header class="site-header">
+  
+<header class="site-header">
+  <div class="site-header-main">
+    <div class="main-header-inner">
 
-    <!-- MAIN HEADER -->
-    <div class="site-header-main">
-      <div class="main-header-inner">
-        
-        <!-- LOGO -->
-        <a href="index.html" class="site-logo">
-          <svg width="180" height="42" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
-            <rect width="220" height="50" rx="4" fill="#110C5B"/>
-            <text x="15" y="34" font-family="'Montserrat', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" letter-spacing="1">PETER</text>
-            <rect x="175" y="10" width="8" height="30" fill="#E31837"/>
-            <rect x="187" y="10" width="8" height="30" fill="#0056A7"/>
-          </svg>
-        </a>
+      <!-- LOGO -->
+      <a href="index.html" class="site-logo" aria-label="Peter Home">
+        <img src="./assets/main logo.png" width="40" alt="Bilhamis">
+      </a>
+      
+      <!-- MOBILE MENU OVERLAY -->
+      <div class="menu-overlay"></div>
 
-        <!-- NAVIGATION MENU -->
-        <nav class="site-navigation">
-          <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link active">Home</a></li>
-            <li class="nav-dropdown">
-              <a href="./about.html" class="nav-link">About Us</a>
-            </li>
-            <li class="nav-dropdown">
-              <a href="./businesses.html" class="nav-link">Our Businesses</a>
-            </li>
-            <!-- <li><a href="#investors" class="nav-link">Investors</a></li> -->
-            <!-- <li><a href="#sustainability" class="nav-link">Sustainability</a></li> -->
-            <!-- <li><a href="#media" class="nav-link">Media</a></li> -->
-            <!-- <li><a href="#careers" class="nav-link">Careers</a></li> -->
-            <li><a href="./contact.html" class="nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!-- DESKTOP / MOBILE NAVIGATION -->
+      <nav class="site-navigation" id="site-navigation"
+           aria-label="Main navigation">
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html" class="nav-link active">Home</a>
+          </li>
+          <li>
+            <a href="./about.html" class="nav-link">About Us</a>
+          </li>
+          <li>
+            <a href="./businesses.html" class="nav-link">Our Businesses</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-controls="site-navigation"
+              aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
-  </header>
+  </div>
+</header>
+
 
   <!-- HERO SLIDER SECTION -->
   <section class="hero-slider-wrap" id="home">
@@ -59,7 +70,7 @@
 
       <!-- SLIDE 1 -->
       <div class="slide-item active">
-        <div class="slide-bg" style="background-image: url('./assets/test 1.jpg');"></div>
+        <div class="slide-bg" style="background-image: url('./assets/slider\ 1.jpg');"></div>
         <div class="slide-overlay"></div>
         <div class="container">
           <div class="slide-content-box">
@@ -73,7 +84,7 @@
 
       <!-- SLIDE 2 -->
       <div class="slide-item">
-        <div class="slide-bg" style="background-image: url('./assets/test 3.jpg');"></div>
+        <div class="slide-bg" style="background-image: url('./assets/slider\ 2.jpg');"></div>
         <div class="slide-overlay"></div>
         <div class="container">
           <div class="slide-content-box">
@@ -87,7 +98,7 @@
 
       <!-- SLIDE 3 -->
       <div class="slide-item">
-        <div class="slide-bg" style="background-image: url('./assets/test 2.jpg');"></div>
+        <div class="slide-bg" style="background-image: url('./assets/slider\ 3.jpg');"></div>
         <div class="slide-overlay"></div>
         <div class="container">
           <div class="slide-content-box">
@@ -177,7 +188,7 @@
       <div class="project-card">
         <div class="project-card-image">
           <div class="project-card-image-overlay"></div>
-          <img src="./assets/test 1.jpg" alt="Oil Refinery">
+          <img src="./assets/business 1.jpg" alt="Oil Refinery">
         </div>
         <div class="project-card-body">
           <h3 class="project-title">Oil Refinery</h3>
@@ -193,7 +204,7 @@
       <div class="project-card">
         <div class="project-card-image">
           <div class="project-card-image-overlay"></div>
-          <img src="./assets/test 2.jpg" alt="Petrochemicals">
+          <img src="./assets/business 2.jpg" alt="Petrochemicals">
         </div>
         <div class="project-card-body">
           <h3 class="project-title">Petrochemicals</h3>
@@ -209,7 +220,7 @@
       <div class="project-card">
         <div class="project-card-image">
           <div class="project-card-image-overlay"></div>
-          <img src="./assets/test 3.jpg" alt="Cement Manufacturing">
+          <img src="./assets/business 3.jpg" alt="Cement Manufacturing">
         </div>
         <div class="project-card-body">
           <h3 class="project-title">Cement Manufacturing</h3>
@@ -225,7 +236,7 @@
       <div class="project-card">
         <div class="project-card-image">
           <div class="project-card-image-overlay"></div>
-          <img src="./assets/test 2.jpg" alt="Sugar Refinery">
+          <img src="./assets/business 4.jpg" alt="Sugar Refinery">
         </div>
         <div class="project-card-body">
           <h3 class="project-title">Sugar Refinery</h3>
@@ -241,7 +252,7 @@
       <div class="project-card">
         <div class="project-card-image">
           <div class="project-card-image-overlay"></div>
-          <img src="./assets/test 1.jpg" alt="Packaging">
+          <img src="./assets/business 5.jpg" alt="Packaging">
         </div>
         <div class="project-card-body">
           <h3 class="project-title">Packaging</h3>
@@ -273,7 +284,7 @@
           <div class="reports-covers-grid">
             <!-- REPORT 1 -->
             <div class="report-cover-box">
-              <img src="./assets/test 3.jpg" alt="Dangote Cement 2025 Annual Report" class="report-cover-img">
+              <img src="./assets/report 1.jpg" alt="Dangote Cement 2025 Annual Report" class="report-cover-img">
               <a href="#" class="report-title-link" onclick="alert('Downloading Dangote Cement 2025 Annual Report...'); return false;">
                 <span>Dangote Cement 2025 Annual Report</span>
                 <i class="fas fa-download" style="color: var(--dangote-blue);"></i>
@@ -282,7 +293,7 @@
 
             <!-- REPORT 2 -->
             <div class="report-cover-box">
-              <img src="./assets/test 2.jpg" alt="Dangote Sugar 2025 Annual Report" class="report-cover-img">
+              <img src="./assets/report 2.jpg" alt="Dangote Sugar 2025 Annual Report" class="report-cover-img">
               <a href="#" class="report-title-link" onclick="alert('Downloading Dangote Sugar 2025 Annual Report...'); return false;">
                 <span>Dangote Sugar 2025 Annual Report</span>
                 <i class="fas fa-download" style="color: var(--dangote-blue);"></i>
@@ -291,7 +302,7 @@
 
             <!-- REPORT 3 -->
             <div class="report-cover-box">
-              <img src="./assets/test 1.jpg" alt="NASCON 2025 Annual Report" class="report-cover-img">
+              <img src="./assets/report 3.jpg" alt="NASCON 2025 Annual Report" class="report-cover-img">
               <a href="#" class="report-title-link" onclick="alert('Downloading NASCON 2025 Annual Report...'); return false;">
                 <span>NASCON 2025 Annual Report</span>
                 <i class="fas fa-download" style="color: var(--dangote-blue);"></i>
@@ -373,12 +384,9 @@
         
         <!-- COL 1: LOGO & OVERVIEW -->
         <div>
-          <svg width="150" height="36" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 15px;">
-            <rect width="220" height="50" rx="4" fill="#FFFFFF"/>
-            <text x="15" y="34" font-family="'Montserrat', sans-serif" font-weight="800" font-size="24" fill="#110C5B" letter-spacing="1">PETER</text>
-            <rect x="175" y="10" width="8" height="30" fill="#E31837"/>
-            <rect x="187" y="10" width="8" height="30" fill="#0056A7"/>
-          </svg>
+          <a href="index.html" class="site-logo" aria-label="Peter Home">
+            <img src="./assets/logo.png" width="40" alt="Bilhamis">
+          </a>
           <p class="footer-text">Dangote continues to grow its vision of becoming the leading provider of essential daily needs in Sub-Saharan Africa.</p>
           <div class="footer-social-icons">
             <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>

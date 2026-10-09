@@ -445,7 +445,7 @@
 }
 
 .image-gap {
-  background: url('../assets/test\ 4.jpeg');
+  background: url('../assets/poster\ 1.jpg');
   background-size: cover;
   background-position: center;
   height: 103.6vh;
@@ -570,7 +570,7 @@
 
 .sustainability-image {
   height: 90vh;
-  background: url('../assets/test\ 3.jpeg');
+  background: url('../assets/poster\ 2.jpg');
   background-position: center;
 }
 
@@ -583,7 +583,6 @@
   .reports-layout-grid { grid-template-columns: 1fr; }
   .sustainability-grid-main { grid-template-columns: 1fr; }
   .footer-columns-grid { grid-template-columns: 1fr 1fr; }
-  .site-navigation { display: none; }
 }
 
 @media (max-width: 576px) {

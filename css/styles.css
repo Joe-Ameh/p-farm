@@ -835,7 +835,6 @@ img {
   .reports-layout-grid { grid-template-columns: 1fr; }
   .sustainability-grid-main { grid-template-columns: 1fr; }
   .footer-columns-grid { grid-template-columns: 1fr 1fr; }
-  .site-navigation { display: none; }
 }
 
 @media (max-width: 576px) {

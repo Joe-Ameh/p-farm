@@ -10,6 +10,55 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearchModal();
 });
 
+
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNavigation = document.querySelector(".site-navigation");
+const menuOverlay = document.querySelector(".menu-overlay");
+
+function setMenuOpen(isOpen) {
+  siteNavigation.classList.toggle("is-open", isOpen);
+  menuToggle.classList.toggle("is-active", isOpen);
+  menuOverlay.classList.toggle("is-visible", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+}
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+  setMenuOpen(!isOpen);
+});
+
+// Close when the overlay is clicked
+menuOverlay.addEventListener("click", () => {
+  setMenuOpen(false);
+});
+
+// Close when a navigation link is clicked
+siteNavigation.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    setMenuOpen(false);
+  });
+});
+
+// Close with the Escape key
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setMenuOpen(false);
+  }
+});
+
+// Reset the menu when returning to desktop width
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    setMenuOpen(false);
+  }
+});
+
 /* 1. HERO SLIDER LOGIC */
 function initHeroSlider() {
   const slides = document.querySelectorAll('.slide-item');
@@ -128,19 +177,6 @@ function initBusinessFilter() {
       });
     });
   });
-}
-
-/* 5. SEARCH MODAL */
-function initSearchModal() {
-  const searchBtn = document.getElementById('searchBtn');
-  if (searchBtn) {
-    searchBtn.addEventListener('click', () => {
-      const q = prompt('Search Dangote Group Portal:');
-      if (q) {
-        alert(`Searching Dangote Industries Limited network for "${q}"...`);
-      }
-    });
-  }
 }
 
 /* GLOBAL REUSABLE MODAL DIALOG */
